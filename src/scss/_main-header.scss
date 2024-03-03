@@ -1,0 +1,115 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 16px;
+    padding-top: 24px;
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+    }
+
+    @media (min-width: 1366px) {
+        padding-top: 42px;
+        padding-left: 34px;
+    }
+
+    &__title {
+        color: #1b1c21;
+        font-family: TT Lakes;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        position: relative;
+    }
+
+    &__title::before {
+        content: '';
+        position: absolute;
+        left: -16px;
+        display: block;
+        height: 40px;
+        width: 4px;
+        border-radius: 0 4px 4px 0;
+        background-color: #41f6d7;
+
+        @media (min-width: 768px) {
+            content: '';
+            position: absolute;
+            left: -24px;
+            display: block;
+            height: 40px;
+            width: 4px;
+            border-radius: 0 4px 4px 0;
+            background-color: #41f6d7;
+        }
+
+        @media (min-width: 1366px) {
+            content: '';
+            position: absolute;
+            left: -34px;
+            display: block;
+            height: 40px;
+            width: 4px;
+            border-radius: 0 4px 4px 0;
+            background-color: #41f6d7;
+        }
+    }
+
+    &__list {
+        display: none;
+
+        @media (min-width: 1366px) {
+            display: flex;
+            margin-right: 46px;
+            margin-left: auto;
+            list-style-type: none;
+        }
+    }
+
+    &__button-1 {
+        @media (min-width: 1366px) {
+            margin-right: 160px;
+            position: relative;
+        }
+    }
+
+    &__button-1--descr {
+        @media (min-width: 1366px) {
+            color: #1b1c21;
+            white-space: nowrap;
+            text-align: right;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            position: absolute;
+            top: 8px;
+            left: -130px;
+        }
+    }
+
+    &__button-2 {
+        @media (min-width: 1366px) {
+            position: relative;
+        }
+    }
+
+    &__button-2--descr {
+        @media (min-width: 1366px) {
+            color: #1b1c21;
+            text-align: right;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            position: absolute;
+            top: 8px;
+            left: -126px;
+        }
+    }
+}
